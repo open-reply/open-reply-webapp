@@ -10,9 +10,13 @@ import '@/styles/globals.css'
 // Constants:
 const inter = Inter({ subsets: ['latin'] })
 
+// Components:
+import Navbar from '@/components/primary/Navbar'
+
 // Functions:
 const App = ({ Component, pageProps }: AppProps) => (
   <main className={inter.className}>
+    <Navbar />
     <Component {...pageProps} />
   </main>
 )
